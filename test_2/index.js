@@ -11,11 +11,10 @@
  *
  * @returns  {Object[]}
  */
+const test1 = require("../test_1/index");
+
 module.exports = function test2() {
-  let results;
-
-  // Write your code here.  The pre-written lines above and below are just suggestions, feel free to delete
-  // them and start fresh.
-
+  const data = test1();
+  const results = data.filter((object) => object.last_name === "Simpson");
   return results;
 };
